@@ -8,6 +8,7 @@ steps:
     type: git-clone
     repo: "${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}"
     revision: "${{CF_BRANCH}}"
+    git: github
     stage: prepare
   init:
     image: hashicorp/terraform:0.13.0
